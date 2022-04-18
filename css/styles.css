@@ -96,11 +96,22 @@ body {
                                 /* Info nav */
 .info {
     display: flex;
-    align-items: center;
     margin-left: auto;
 }
-.info .item {
 
+.item {
+    align-items: center;
+}
+.info-svg {
+    margin-right: 10px;
+    vertical-align: middle;
+    color: #757575;
+}
+.info-svg:hover {
+    fill: var(--color-logo);
+}
+.info-svg .item + .item {
+    margin-left: 10px;
 }
 .info .link {
     color: var(--primary-text-color);
@@ -117,7 +128,6 @@ body {
 .info .link:hover, 
 .info .link:focus {
     color: var(--color-logo);
-    
 }
                                 /* Servis section */
 .service {
@@ -157,7 +167,6 @@ body {
     color: var(--white-color);
     background: var(--color-logo);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
     border-radius: 4px;
 }
 .service button:hover,
@@ -174,10 +183,20 @@ body {
 .benefits .item + .item {
     margin-left: 30px;
 }
-
 .benefits {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+.benefits-svg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.benefits-style {
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    padding: 25px;
+    margin-bottom: 30px;
 }
 .benefits-hero {
     color: var(--secondary-text-color);
@@ -187,7 +206,6 @@ body {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 10px;
-
 }
 .benefits-text {
     color: var(--primary-text-color);
@@ -275,6 +293,44 @@ border-radius: 0px 0px 4px 4px;
     padding-bottom: 30px;
     
 }
+                                /* clients section */
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.clients-hero {
+    color: var(--secondary-text-color);
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+.clients-style {
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    width: 170px;
+    height: 92px;
+}
+
+.clients-list {
+    display: flex;
+}
+.clients-svg {
+    display: block;
+    margin: 16px 32px;
+    fill: currentColor;
+}
+.clients-list .item + .item {
+    margin-left: 30px;
+}
+.clients-list .item {
+    fill: #AFB1B8;
+}
+
+
+
+
 
                                 /* Footer section */
 .footer .logo-footer {
