@@ -96,7 +96,11 @@ body {
                                 /* Info nav */
 .info {
     display: flex;
+    align-items: center;
     margin-left: auto;
+}
+.info .item {
+
 }
 .info .link {
     color: var(--primary-text-color);
@@ -117,10 +121,18 @@ body {
 }
                                 /* Servis section */
 .service {
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Background-Img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #2F303A;
     text-align: center;
     padding-bottom: 200px;
     padding-top: 200px;
+   
 }
 .service-hero {
     margin-top: 0;
