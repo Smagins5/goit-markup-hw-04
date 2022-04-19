@@ -48,7 +48,6 @@ body {
     text-decoration: none;
     cursor: var(--cursor-default);
 }
-
 .logo-one {
     color: var(--color-logo);
     font-family: 'Raleway';
@@ -73,7 +72,6 @@ body {
 .site-nav .item + .item {
     margin-left: 50px;
 }
-
 .site-nav .link {
     display: block;
     color: var(--secondary-text-color);
@@ -98,7 +96,6 @@ body {
     display: flex;
     margin-left: auto;
 }
-
 .item {
     align-items: center;
 }
@@ -143,7 +140,6 @@ body {
     text-align: center;
     padding-bottom: 200px;
     padding-top: 200px;
-   
 }
 .service-hero {
     margin-top: 0;
@@ -295,43 +291,33 @@ body {
 }                                    
     
                                      /* Social content */
-
+.link-svg {
+    display: block;
+    margin: 0 auto;
+    padding: -12px;
+}
 .social-button {
     display: flex;
-    justify-content: center;  
+    justify-content: center; 
     margin-bottom: 30px;
-    fill: currentColor;
 }
-.social-button .link {
-    width: 44px;
-    height: 44px;
+.link {
+    fill: #AFB1B8;
+    padding: 12px 12px;
     border-radius: 50%;
 }
 .social-button .link + .link {
     margin-left: 10px;
 }
-.link-svg {
-    display: block;
-    margin: auto;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    color: #AFB1B8;
+.social-button .link:hover,
+.social-button .link:focus {
+    fill: var(--white-color);
+    background-color: var(--color-logo);
 }
 .link-svg:hover,
 .link-svg:focus {
     fill: var(--white-color);
 }
-.social-button .link:hover,
-.social-button .link:focus {
-    background-color: var(--color-logo);
-    fill: var(--white-color);
-}
-
-
-
-
-
-
                                 /* clients section */
 .clients {
     padding-top: 94px;
@@ -380,7 +366,6 @@ body {
     padding-top: 0;
     padding-bottom: 0;
 }
-
 .logo-white {
     color: var(--white-color);
     font-family: 'Raleway';
@@ -415,8 +400,7 @@ body {
 .address a:focus {
     color: var(--color-logo);
 }
-                                    /* ПРИСОЕДИНЯЙТЕСЬ */
-                      
+                                    /* Social section */                
 .join-hero {
     font-weight: 700;
     font-size: 14px;
@@ -424,14 +408,11 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-color);
+    margin-top: 12px;
+    margin-bottom: 20px;
 }
-.join-button {
-    display: flex;
-    fill: currentColor;
-}
-.join-button .link {
-    width: 44px;
-    height: 44px;
+.social-item .link {
+    padding: 12px 12px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
 }
@@ -440,30 +421,40 @@ body {
 }
 .join-svg {
     display: block;
-    margin: auto;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    color: var(--white-color);
+    margin: 0 auto;
+    padding: -12px;
 }
 .join-svg:hover,
 .join-svg:focus {
     fill: var(--white-color);
 }
-.join-button .link:hover,
-.join-button .link:focus {
+.social-item .link:hover,
+.social-item .link:focus {
     background-color: var(--color-logo);
     fill: var(--white-color);
 }
-.footer .join-main {
+.footer {
     display: flex;
-    
 }
-.join-button {
-    
+.adress-item {
+    display: flex;
+    flex-direction: column;
 }
-
-
-
+.social-item {
+    margin-left: 70px;
+}
+.social-item .link {
+    display: inline-flex;
+}
+.social-button .link:hover,
+.social-button .link:focus {
+    fill: var(--white-color);
+    background-color: var(--color-logo);
+}
+.link-svg:hover,
+.link-svg:focus {
+    fill: var(--white-color);
+}
                                     
                                     /* Страница Портфолио */
 
@@ -497,10 +488,14 @@ body {
     color: var(--white-color);
     background-color: var(--color-logo);
 }
-.list-button button:hover,
-.list-button button:focus {
+ .list-button button:hover,
+ .list-button button:focus {
+    outline: none;
     color: var(--white-color);
     background-color: var(--color-logo);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
     }
                                         /* Портфолио */
 
@@ -509,10 +504,6 @@ body {
     padding-left: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-.list-button .item:hover,
-.list-button .item:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .examples-hero {
     color: var(--secondary-text-color);
@@ -550,7 +541,6 @@ body {
                 0px 4px 4px rgba(0, 0, 0, 0.06),
                 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
 .examples-item:nth-child(3n) {
     margin-right: 0;
 }
