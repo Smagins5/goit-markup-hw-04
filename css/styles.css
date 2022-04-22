@@ -172,10 +172,7 @@ body {
 }
                                 /* Benefits section */
 .benefits-list {
-    display: flex;
-}
-.benefits .item {
-    width: 270px;
+    display: flex;  
 }
 .benefits .item + .item {
     margin-left: 30px;
@@ -184,16 +181,16 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.benefits-svg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 .benefits-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 4px;
     background-color: #F5F4FA;
-    padding: 25px;
     margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    
 }
 .benefits-hero {
     color: var(--secondary-text-color);
@@ -301,7 +298,7 @@ body {
     justify-content: center; 
     margin-bottom: 30px;
 }
-.link {
+.social-button .link {
     fill: #AFB1B8;
     padding: 12px 12px;
     border-radius: 50%;
@@ -313,10 +310,12 @@ body {
 .social-button .link:focus {
     fill: var(--white-color);
     background-color: var(--color-logo);
+    outline: none;
 }
 .link-svg:hover,
 .link-svg:focus {
     fill: var(--white-color);
+    outline: none;
 }
                                 /* clients section */
 .clients {
@@ -326,20 +325,21 @@ body {
 .clients-list {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 50px;
 }
 .clients-item:not(:last-child) {
     margin-right: 30px;
 }
 .clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     fill: #AFB1B8;
-    padding: 16px 32px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-}
-.clients-link {
-    display: block;
-    object-position: center;
+    width: 170px;
+    height: 92px;
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -415,8 +415,10 @@ body {
     padding: 12px 12px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
+    fill: var(--white-color);
+    outline: none;
 }
-.join-button .link + .link {
+.social-item .link + .link {
     margin-left: 10px;
 }
 .join-svg {
